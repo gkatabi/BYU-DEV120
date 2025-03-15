@@ -1,9 +1,21 @@
 using System;
-
-class Program
+namespace Program;
+class Fraction
 {
-    static void Main(string[] args)
+// Attributes space....... still obliged to differenciate between them and objects
+    private int top;
+    private int bottom;
+
+    private Fraction ()
     {
-        Console.WriteLine("Hello World! This is the Fractions Project.");
+        top = 2;
+        bottom = 4;
+    }
+
+    static void Main(string[]args )
+
+    {
+        Fraction FractionHolder = new Fraction();
+        Console.WriteLine(FractionHolder.top +"/"+ FractionHolder.bottom);//"Hello World! This is the Fractions Project.");
     }
 }
