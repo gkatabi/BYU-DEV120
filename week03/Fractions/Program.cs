@@ -6,12 +6,19 @@ class Fraction
     private int top;
     private int bottom;
 
+// The constructor without parameters
     private Fraction ()
     {
-        top = 2;
-        bottom = 4;
+        top = 1;
+        bottom = 1;
+        // A constructor of a value 5 at top but denominator is  none
+        top = 5;
+        bottom  = 
+        // A constructor with a top and a bottom
+        top =4 ;
+        bottom = 7;
     }
-
+    
     static void Main(string[]args )
 
     {
