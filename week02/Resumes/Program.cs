@@ -1,5 +1,5 @@
 using System;
-namespace Documents;
+namespace Documents
 {
     public class Company()
     {
