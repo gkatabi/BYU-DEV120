@@ -34,7 +34,7 @@ namespace HelloWorld;
             }
 
             
-        public static void GetWords(string[] msg)
+        public static void Main(string[] msg)
         {
             string[]_book = {"John"};
             string[]_chapter = {"5"};
@@ -43,25 +43,21 @@ namespace HelloWorld;
 
             string[] _firstWords = { "After ","this ","there ", "was ", "a ","feast ","of ","the ","Jews ","and ","Jesus ","went ","to ","Jerusalem "} ;                
                 
-            string[]_secondWords = { "Now","there", "is", "at","Jerusalem", "by","the", "sheep","market", "at","pool", ",","which", "is","called", "in","the", "Hebrew","tongue", "Bethesida",",","having","five", "porches"};
+            string[]_secondWords = { "Now ","there ", "is ", "at ","Jerusalem ", "by ","the ", "sheep ", "market ", "at ","pool ", "which ", "is ","called ", "in ","the ", "Hebrew ","tongue ", "Bethesida ", "having ","five ", "porches ","."};
             string[] Words = _firstWords.Concat (_secondWords).ToArray();
             foreach(string  word in Words)
             Console.Write(Words);
 
-            Console.WriteLine($"That was the scripture in"  );
-            Console.WriteLine("Let's see if you can remember it without seeing it");
+            Console.WriteLine($"Truth can be remembered even without seeing."  );
+            Console.WriteLine("Let's see if you can remember  it without seeing it");
 
             Words[9] ="_" ;
             foreach (string word in Words)
             {
                 Random rnd = new Random();
-                Console.WriteLine(word);
+                Console.Write(word);
             }
-        static void Main(string[]args)
-        {
-            Console.WriteLine("Pleaase! ");
-            
-        }    
+   
         }
     }
             
