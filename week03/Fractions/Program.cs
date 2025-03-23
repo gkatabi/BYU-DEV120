@@ -1,6 +1,6 @@
 using System;
-namespace Documents
-{
+namespace Documents;
+using System.Collections.Generic;
 
 
     public class Fraction
@@ -44,7 +44,7 @@ namespace Documents
             {
                 Console.WriteLine("Enter a whole number");
                 int number = Convert .ToInt32(Console.ReadLine());
-                r4rrreturn number; 
+                return number; 
             }
         }
 
@@ -57,7 +57,11 @@ namespace Documents
         public static void Main(string[]args )
 
     {
-        Fraction Divide  = new Fraction();
-        Console.WriteLine(FractionHolder.n +"/"+ FractionHolder.bottom);//"Hello World! This is the Fractions Project.");
+        Fraction Divide  = new Fraction()
+        {
+            Fraction.Top(),"/", Fraction.Bottom(),
+            {
+                Console.WriteLine("/");//"Hello World! This is the Fractions Project.");
+        }
     }
 }
