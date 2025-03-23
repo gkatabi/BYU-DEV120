@@ -47,6 +47,21 @@ using System.Collections.Generic;
                 return number; 
             }
         }
+        private class DividerWave
+        {
+           private static void Wave(int n = 4, string c = "/" ,int b= 2)
+            {
+            
+                int Top = n;
+                string Middle = "/";
+                int Bottom = b;
+                float m = n/b;
+        //n;Middle; Bottom;
+            }
+            int n = 4;
+            int b = 2; 
+        
+        }
 
 
         private static int Top()
@@ -57,11 +72,7 @@ using System.Collections.Generic;
         public static void Main(string[]args )
 
     {
-        Fraction Divide  = new Fraction()
-        {
-            Fraction.Top(),"/", Fraction.Bottom(),
-            {
-                Console.WriteLine("/");//"Hello World! This is the Fractions Project.");
-        }
+        
+
     }
 }
