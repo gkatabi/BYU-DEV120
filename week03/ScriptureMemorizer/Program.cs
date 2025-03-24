@@ -1,5 +1,5 @@
 using System;
-namespace Memorizer;
+namespace Reminder;
 
     class Scripture
     {
@@ -94,11 +94,21 @@ namespace Memorizer;
     static void Main(string[] args)
     {
         List <string> Scripture    = new List<string>();
+        string _book = "John";
+        string _chapter = "5";
+        string  _verseStart = "1";
+        string _verseEnd = "2";
+        Console.WriteLine($"{_book},{_chapter},{_verseStart},{_verseEnd}");
         List <string> Reference    = new List<string>();
+        string _dispensation = "Old";
+        Console.WriteLine($"{_dispensation}");
+    
         List <string> Reminder    = new List<string>();
-        List <string> Hider    = new List<string>();
+        string _hour = "3";
+
+        Console.WriteLine($"It's {_hour},hours now. You should read your scriptures. ");
         
-        Console.WriteLine("Hello World! This is the OnlineOrdering Project.");
+        
     }
     
 }
