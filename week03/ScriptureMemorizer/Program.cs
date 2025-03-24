@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 namespace Reminder;
 
     class Scripture
@@ -8,6 +9,7 @@ namespace Reminder;
 
         public string _verseStart = " ";
         public string _verseEnd = "";
+        
 
         public Scripture()
         {
@@ -29,6 +31,9 @@ namespace Reminder;
         {
             Console.WriteLine($"{_verseEnd}");
         }
+        
+        
+
 
 
     }
@@ -75,19 +80,20 @@ namespace Reminder;
 
     class Hider
     {
-        public string _words =" ";
+        public string _Words = "";
         public string _replacement = "_ ";
 
         private Hider()
         {
-
+         
         }
-        public void Show_words()
+        public void Show_Words()
         {
-            Console.Write(_words);
+            Console.Write(_Words);
         }
         public void Show_replacement()
         {
+              
             Console.Write(_replacement);
         }
     
@@ -106,8 +112,12 @@ namespace Reminder;
         List <string> Reminder    = new List<string>();
         string _hour = "3";
 
+        List <string> Hider = new List <string>();
+        string _Words = ("After this there was  a feast of the Jews; and Jesus went up to Jerusalem.\nNow there is at Jerusalem by the sheep market a pool, which is called in the Hebrew tongue Bethesda, having five Porches.");
+        string _replacement = ("_________________________________________");
+
         Console.WriteLine($"It's {_hour},hours now. You should read your scriptures. ");
-        
+        Console.Write($"{_Words}");
         
     }
     
