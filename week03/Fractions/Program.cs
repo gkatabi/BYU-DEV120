@@ -1,96 +1,42 @@
 using System;
 namespace Documents;
-using System.Collections.Generic;
-
 
     public class Fraction
     {
-        //                                Attributes space....... still obliged to differenciate between them and objects
-        public static int Top(int n)
-        {
-            return n;
+       private int _top;
+       private int _bottom;
 
-        }
-    
-
-        public static string Middle(string c)
-        {
-            c = "/";
-            return  c;
-        }
-        public static int Bottom(int b)
-        {
-            
-            return b ; 
-        }
-    
-    public class Divide
-    {
-            public static int n { get; private set; }
-            public static int b { get; private set; }
-
-
-            private static object m(float m )
-        {
-        
-            return m;
-
-        }
-    }
-
-        static int Bottom()
-        {
-            List <int> b =  new List<int> ();
-            {
-                Console.WriteLine("Enter a whole number");
-                int number = Convert .ToInt32(Console.ReadLine());
-                return number; 
-            }
-        }
-        public class DividerWave
-        {
-    public static void Wave(int n, string c = "/" ,int b = 3 )
-            {
-            
-                int Top = n;
-                string Middle = "/";
-                int Bottom = b;
-                float m = n/b;
-        //n;Middle; Bottom;
-            }
-//            int n = 4;
-//            int b = 2; 
+       public Fraction()
+       {
+        // Default to 1/1
+           _top = 1;
+           _bottom = 1;
         }
 
-
-        public static int Top()
+           public Fraction(int wholeNumber)
         {
-            throw new NotImplementedException();
+            _top = wholeNumber;
+            _bottom = 1;
         }
 
-    public static void Main(string[]args )
-
-    {
-        static void Top()
+        public Fraction(int top, int bottom)
         {
-            Console.WriteLine("Provide a Top number between 0 & 10");
-            string Top = Console.ReadLine();
-            int n = Convert.ToInt32(Console.ReadLine());
-
+            _top = top;
+            _bottom = bottom;
         }
 
-
-        static void Wave()
+        public string GetFractionString()
         {
-            Console.WriteLine("/");
+        // Notice that this is not stored as a member variable.
+        // Is is just a temporary, local variable that will be recomputed each time this is called.
+            string text = $"{_top}/{_bottom}";
+            return text;
         }
-            
-        static void Bottom()
-        {
-            Console.WriteLine("Provide a bottom number between 0 & 10");
-            string bottom = Console.ReadLine();
-            int b = Convert.ToInt32(Console.ReadLine());
-        }             
 
+        public double GetDecimalValue()
+        {
+        // Notice that this is not stored as a member variable.
+        // Is will be recomputed each time this is called.
+            return (double)_top / (double)_bottom;
     }
 }
