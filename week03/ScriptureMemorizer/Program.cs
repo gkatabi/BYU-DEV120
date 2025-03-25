@@ -83,7 +83,7 @@ namespace Reminder;
         public string _Words = "";
 
     
-        public string _replacement = "_ ";
+        public string _replacement = "_";
 
         private Hider()
         {
@@ -98,26 +98,35 @@ namespace Reminder;
               
             Console.Write(_replacement);
         }
-
-   class Random
-   {
-    public string _words;
-    public string _replacement; 
-   }
-   public Random()
-   {
-
-   }
-       public void 
-   
-    static void Main(string[] args)
+    public static void Main(string[] args)
     {
+
+        static void YesMethod()
+        {
+            Console.WriteLine("I love you");
+        }
+
+        static void NoMethod()
+        {
+            Console.WriteLine("Ok");
+    
+        }
+
+
+
+        Console.WriteLine("This is a scripture reminder.\nWould you like to continue? 'Y' for Yes and 'N' for no");
+        string Decission = Console.ReadLine();
+
+
+
         List <string> Scripture    = new List<string>();
         string _book = "John";
         string _chapter = "5";
         string  _verseStart = "1";
         string _verseEnd = "2";
         Console.WriteLine($"{_book},{_chapter},{_verseStart},{_verseEnd}");
+
+        List <string>Random = new List <string>();
         List <string> Reference    = new List<string>();
         string _dispensation = "Old";
         Console.WriteLine($"{_dispensation}");
@@ -127,11 +136,15 @@ namespace Reminder;
 
         List <string> Hider = new List <string>();
         string _Words = ("After this there was  a feast of the Jews; and Jesus went up to Jerusalem.\nNow there is at Jerusalem by the sheep market a pool, which is called in the Hebrew tongue Bethesda, having five Porches.");
-        string _replacement = ("_________________________________________");
+        string _replacement = ("_");
 
         Console.WriteLine($"It's {_hour},hours now. You should read your scriptures. ");
         Console.Write($"{_Words}");
+
         
+        
+        
+    
     }
     
 }
