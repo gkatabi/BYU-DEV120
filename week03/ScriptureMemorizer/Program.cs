@@ -81,6 +81,8 @@ namespace Reminder;
     class Hider
     {
         public string _Words = "";
+
+    
         public string _replacement = "_ ";
 
         private Hider()
@@ -96,7 +98,18 @@ namespace Reminder;
               
             Console.Write(_replacement);
         }
-    
+
+   class Random
+   {
+    public string _words;
+    public string _replacement; 
+   }
+   public Random()
+   {
+
+   }
+       public void 
+   
     static void Main(string[] args)
     {
         List <string> Scripture    = new List<string>();
