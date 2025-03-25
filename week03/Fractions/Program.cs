@@ -1,4 +1,5 @@
 using System;
+using System.Xml;
 namespace Documents;
 
     public class Fraction
@@ -40,18 +41,8 @@ namespace Documents;
             return (double)_top / (double)_bottom;
     }
 
-
-    
-
-
-
-
-
-
-
     public static void Main(string[]args)
     {
-//        Console.WriteLine($"{_top1},/,{_bottom1}");
         int _top1 = 1;
         int _bottom1 = 1;
         List <int> _top = new List <int>();
@@ -60,28 +51,11 @@ namespace Documents;
 
         int _topd = 1 ;
         int _bottomd = 1;
-        List <double> GetDecimalValue = new List <double>();
-        
+        List <double> _topx = new List <double>();
+        List <double> _bottomx = new List <double>();
         double div = _topd/_bottomd;
 
-        Console.WriteLine($"{ div}");
-
-
-        int _top2 = 1;
-        int _bottom2 = 1;
-        List <int> _top3 = new List  <int>();
-        List <int> _bottom3 = new List <int>();
-        Console.WriteLine($"{_top2}");
-
-        int _topc = 1 ;
-        int _bottomc = 1;
-        List <double> GetDecimalValuec = new List <double>();
-        
-        double divc = _topc/_bottomc;
-
-        Console.WriteLine($"{ divc}");
-       
-
+        Console.WriteLine ($"{ div}");
 
 
 
@@ -100,29 +74,37 @@ namespace Documents;
         Console.WriteLine($"{ div1}");
 
 
-        int _top5 = 5;
-        int _bottom5 = 0;
-        List <int> _top7 = new List <int>();
-        List <int> _bottom7 = new List <int>();
-        Console.WriteLine($"{_top5}");
 
-        int _topP = 5 ;
-        int _bottomP = 0;
-        List <double> GetDecimalValueP = new List <double>();
+        int _top8 = 3;
+        int _bottom8 = 4;
+        List <int> _topj = new List <int>();
+        List <int> _bottomj = new List <int>();
+        Console.WriteLine($"{_top8}/{_bottom8}");
+
+        int _topw = 3 ;
+        int _bottomw = 4;
+        List <double> GetDecimalValuew = new List <double>();
         
-        double div2 = _topP/_bottomP;
+        double div3 = _topw/_bottomw;
 
-        Console.WriteLine($"{ div2}");
+        Console.WriteLine($"{ div3}");
 
 
+
+        int _top9 = 1;
+        int _bottom9 = 3;
+        List <int> _topt = new List <int>();
+        List <int> _bottomt = new List <int>();
+        Console.WriteLine($"{_top9}/{_bottom9}");
+
+        int _topy = 1;
+        int _bottomy = 3;
+        List <double> GetDecimalValuey = new List <double>();
         
-        Console.Write($"{_bottom1}");
-//        int _bottom2 = 0;
-        Console.Write($"{_bottom2}");
-//        int _bottom3 = 1;
-        Console.Write($"{_bottom3}");
-//        int _bottom4 = 0;
-        Console.Write($"{_bottom4}");
+        double div6 = _topy/_bottomy;
+
+        Console.WriteLine($"{div6}");       
+
 
     
     }
