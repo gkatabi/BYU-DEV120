@@ -9,13 +9,15 @@ namespace Documents;
        public Fraction()
        {
         // Default to 1/1
-          int _top = 1;
-           int _bottom = 1;
+           
+           int _top1  ;
+    
+           int _bottom ;
         }
 
            public Fraction(int wholeNumber)
         {
-            _top = ;
+            _top = wholeNumber;
             _bottom = 1;
         }
 
@@ -27,16 +29,38 @@ namespace Documents;
 
         public string GetFractionString()
         {
-        // Notice that this is not stored as a member variable.
-        // Is is just a temporary, local variable that will be recomputed each time this is called.
+        
             string text = $"{_top}/{_bottom}";
             return text;
         }
 
         public double GetDecimalValue()
         {
-        // Notice that this is not stored as a member variable.
-        // Is will be recomputed each time this is called.
+            
             return (double)_top / (double)_bottom;
+    }
+    public static void Main(string[]args)
+    {
+        List <int> _top = new List <int>();
+        int _top1 = 1;
+        Console.Write($"{_top1}");
+        int _top2 = 1 ;
+        Console.Write($"{_top2}");
+        int _top3 = 5;
+        Console.Write($"{_top3}");
+        int _top4 = 5;
+        Console.Write($"{_top4}");
+        Console.Write($"{_top}");
+        List <int> _bottom = new List <int>();
+        int _bottom1 = 1;
+        Console.Write($"{_bottom1}");
+        int _bottom2 = 0;
+        Console.Write($"{_bottom2}");
+        int _bottom3 = 1;
+        Console.Write($"{_bottom3}");
+        int _bottom4 = 0;
+        Console.Write($"{_bottom4}");
+
+    
     }
 }
