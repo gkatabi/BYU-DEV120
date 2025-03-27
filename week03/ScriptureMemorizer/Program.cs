@@ -103,7 +103,7 @@ namespace Reminder;
 
         static void YesMethod()
         {
-            Console.WriteLine("I love you");
+            Console.WriteLine; YesMethod()
         }
 
         static void NoMethod()
@@ -125,15 +125,15 @@ namespace Reminder;
         string  _verseStart = "1";
         string _verseEnd = "2";
         Console.WriteLine($"{_book},{_chapter},{_verseStart},{_verseEnd}");
-
-        List <string>Random = new List <string>();
-        List <string> Reference    = new List<string>();
+    
+       List <string>Random = new List <string>();
+         List <string> Reference    = new List<string>();
         string _dispensation = "Old";
         Console.WriteLine($"{_dispensation}");
     
         List <string> Reminder    = new List<string>();
         string _hour = "3";
-
+        Console.WriteLine("New testament");
         List <string> Hider = new List <string>();
         string _Words = ("After this there was  a feast of the Jews; and Jesus went up to Jerusalem.\nNow there is at Jerusalem by the sheep market a pool, which is called in the Hebrew tongue Bethesda, having five Porches.");
         string _replacement = ("_");

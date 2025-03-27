@@ -49,7 +49,7 @@ namespace Documents
      
         }
 
-        int SixHourlyReminder2(int)
+        static int SixHourlyReminder2(int)
         {
             Time();
         
@@ -60,7 +60,7 @@ namespace Documents
 
         }
 
-        public int SixHourlyReminder3(int)
+        public static int SixHourlyReminder3(int)
         {
             Time();
             int currentTime = new int Time();
