@@ -1,96 +1,68 @@
 using System;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography.X509Certificates;
-namespace VideoTracker
- public class Vedeo
+namespace VideoTracker;
+
+    public class Product
     {
-        public string _title = " ";    //"Big bookings", "Where Mammy wasn't", "The debt man owes God", "Learn to let go");
-
-        public string _author =" ";
-
-        public string _length = " ";
-
-//              Space for returning
-        public Vedeo()
+        private string _productName = " " ;
+        
+        private string _productId;
+        private string _productquantity;
+        private string _customer  = " ";
+        public void int productTotalCost()
         {
-            
-        }
+            int  _pricePerUnit =;
+            int  _quantity;
+        int productTotalPrice =(_pricePerUnit * _quantity); 
+            {
 
-
-//      Since it's public lets display
-        public void Show_title()
-        {
-            Console.Write($"{_title}");
-
+            }
         }
-        public void Show_author()
-        {
-            Console.Write($"{_author}");
-        }
-        public void Show_length()
-        {
-            Console.Write($"{_length}");
-        }
-
+    
     }
-    public class  Comment
+
+
+
+    public class Customer
     {
-        public string[] _name = new string[0];
-
-        public string[] _comment = new string[0];
-
-        public int[] _numberOfComments = new int[0];  
-
-
-        public Comment()
-        {
-            
-        } 
-        public static void Show_name()
-        {
-            Console.Write(" ");
-        }
-        public static void Show_comment()
-        {
-            Console.Write(" ");
-        }
-
-
-        public static void Show_numberOfComments()
-        {
-            Console.Write(" ");
-        }
-
 
     
-    
-    
-    static void Main(string[] args)
+    }
+
+
+
+    public class Address
     {
-        string _title1          = "The money man Owes God";
-    //    string _title2          = "Where Mammy wasn't";
-    //    string _title3          = "My man Mr.Godfrey";
-    //    string _title4          = "Learn to let go";
+        public int _houseNumber = 467;
+        public string _street = "Greigory street";
+        public string _city = "hsere ";
+        public string _country = "utah";
+         
 
-        
-        string[] _comment1     = ["I hate not having a Mom"];//"actors, pls consider fathers too","Nice to watch with my kids"];
-    //    string[] _comment3     = ["I love Irene", "He is a very patient father","I wish all rich men are a Godfrey","Would have gone for the classy Cornereah!!!"];
-    //    string[] _comment4     = ["Stupid fly burried on a cacus###", "What a pain","That was too much....for him","I need one of such heart broken men"];
+    } 
 
-    //    List <string> Vedeo   = new List <string>();
-        List <string> Comment = new List<string>();
+
+
+    public class Order
+    {
+        public static string _products ;
         
+        public string _customer ;
+
+        public static int totalCostOfOrderl()
         {
-            Console.WriteLine($"Viewers  had these comments on{_title1}: ");
-            Console.WriteLine ($"{_comment1}");
-    //        Console.WriteLine($"Viewers had these comments on{_title2}: ");
-    //        Console.WriteLine ($"{_comment2}");
-    //        Console.WriteLine($"Viewers had these comments on{_title3}: ");
-    //        Console.WriteLine ($"{_comment3}");
-    //        Console.WriteLine($"Viewers had these comments on{_title4}: ");
-    //        Console.WriteLine ($"{_comment4}");
-
+            int A = 2;
+            int B =2;
+            int C = A + B;
+            return  C;
         }
+
+
+
+    }    
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("OK");
     }
 }
- 
