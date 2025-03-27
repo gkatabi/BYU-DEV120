@@ -8,16 +8,18 @@ namespace VideoTracker;
         private string _productName = " " ;
         
         private string _productId;
-        private string _productquantity;
+        private static string _productquantity;
         private string _customer  = " ";
-        public void int productTotalCost()
+        public  productTotalCost()
         {
-            int  _pricePerUnit =;
-            int  _quantity;
-        int productTotalPrice =(_pricePerUnit * _quantity); 
-            {
-
-            }
+            int  _pricePerUnit=6 ;
+            int  _quantity =5;
+            int productTotalPrice =(_pricePerUnit * _quantity);
+        
+            return 
+        }
+            
+            
         }
     
     }
@@ -60,7 +62,7 @@ namespace VideoTracker;
 
 
 
-    }    
+        
     public static void Main(string[] args)
     {
         Console.WriteLine("OK");
