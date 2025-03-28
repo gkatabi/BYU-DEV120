@@ -51,8 +51,6 @@ namespace VideoTracker;
             {
                 Console.Write($"{_name1} {_comments1}\n {_name2} {_comments2}");
             }
-
-
         }
         public class Count
         {
@@ -65,20 +63,7 @@ namespace VideoTracker;
             {
                 Console.WriteLine("They were: ");
             }
-
-
-        static void Main(string[] args)
-
-    //        Console.WriteLine($"Viewers had these comments on{_title2}: ");
-    //        Console.WriteLine ($"{_comment2}");
-    //        Console.WriteLine($"Viewers had these comments on{_title3}: ");
-    //        Console.WriteLine ($"{_comment3}");
-    //        Console.WriteLine($"Viewers had these comments on{_title4}: ");
-    //        Console.WriteLine ($"{_comment4}");
-    //"actors, pls consider fathers too","Nice to watch with my kids"];
-    //    string[] _comment3     = ["I love Irene", "He is a very patient father","I wish all rich men are a Godfrey","Would have gone for the classy Cornereah!!!"];
-    //    string[] _comment4     = ["Stupid fly burried on a cacus###", "What a pain","That was too much....for him","I need one of such heart broken men"];
-
+                    static void Main(string[] arg)
         {
             Video video = new Video();
         
@@ -86,21 +71,45 @@ namespace VideoTracker;
             string _title1  = "Why Cub drivers park near the bush";
             string _author1 = "Long Foot";
             int _length1 = 2344;
-            Console.WriteLine($"On your video\n{_title1}\nBy {_author1}\nOf length {_length1} Seconds");   
+            Console.WriteLine($"On your video\n1: {_title1}\nBy {_author1}\nOf length {_length1} Seconds");   
             
-           Comments _comments = new Comments();
-           string _name = "Gerald";
-           string _comment1   = "Why is it so long?";  
-           Console.WriteLine($"{_name}Commented:\n{_comment1}");
+            Comments _comments = new Comments();
+            string _name = "Linda";
+            string _comment1   = "Knock it off?";  
+            Console.WriteLine($"{_name}Commented:\n{_comment1}");
+
+            string _title2  = "Why Cub drivers park near the bush";
+            string _author2 = "Long Foot";
+            int _length2 = 2344;
+            Console.WriteLine($"On your video\n2: {_title2}\nBy {_author2}\nOf length {_length2} Seconds");   
+            
+            Comments _comments2 = new Comments();
+            string _name1 = "Gerald";
+            string _comment3   = "Why is it so long?";  
+            Console.WriteLine($"{_name1}Commented:\n{_comment3}");
+
+            string _title3  = "When My Mother Left Me";
+            string _author3 = "Frost Redboots";
+            int _length3 = 2534;
+            Console.WriteLine($"On your video\n3: {_title3}\nBy {_author3}\nOf length {_length3} Seconds");   
+            
+            Comments _comments3 = new Comments();
+            string _name3 = "Racheal";
+            string _comment4   = "Sell it not needed?";  
+            Console.WriteLine($"{_name3}Commented:\n{_comment4}");
+            string _title4  = "Big bat";
+            string _author4 = "Preasley Elvis";
+            int _length4 = 2734;
+            Console.WriteLine($"On your video\n3: {_title4}\nBy {_author4}\nOf length {_length4} Seconds");   
+            
+            Comments _comments5 = new Comments();
+            string _name4 = "Racheal";
+            string _comment6   = "Sell it not needed?";  
+            Console.WriteLine($"{_name4}Commented:\n{_comment4}");
 
 
-           Video myVideo =  new Video();
-           myVideo._title = "True Roads to Africa";
-           
-           
-           
-           
-
+            Video myVideo =  new Video();
+            myVideo._title = "True Roads to Africa";
         }
         
     }
