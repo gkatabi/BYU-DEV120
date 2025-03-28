@@ -6,9 +6,9 @@ using System.Collections.Generic;
 namespace VideoTracker;
  public class Video
     {
-        public string _title = " ";
+        public string _title = "";
 
-        public string _author =" ";
+        public string _author = "";
 
         public string _length = " ";
 
