@@ -50,6 +50,6 @@ namespace Mindfulness;
     }
     static void Main(string[] args)
     {
-        Console.WriteLine("Welcome to the Mindful program where you will re discover relaxation and strength to carry on with a relaxed mind.");
+        Console.WriteLine("Welcome to this Mindful program where you will re discover relaxation and strength to carry on with a relaxed mind.");
     }
 }
