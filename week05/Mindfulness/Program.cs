@@ -1,21 +1,21 @@
 using System;
 using System.ComponentModel;
-namespace Activity;
+namespace Activities;
 
-    class Breathing
+    class Activity
     {
         private string _description;
         public int _duration;
         private string _breath ="In";
         public string _endMessage;
-    public class breathOut:Breathing
+    public class breathOut:Activity
     {
         private string _breath1 = "Out";
     }
 
-    public class Reflection:Breathing
+    public class Reflection:Activity
     {
-        private string _description1;
+        private string description1;
         public int _duration1;
         private string _randomPrompt;
         private string _reflect;
@@ -23,7 +23,7 @@ namespace Activity;
 
     }
 
-    public class Listing:Breathing
+    public class Listing:Activity
     {
         private string _description2;
         private int _duration2;
@@ -32,8 +32,13 @@ namespace Activity;
         public int _itemsCount;
         public int _count;
     }
-    public void Main (string[] args)
+    static void Main (string[]args)
+
     {
+        Activity breath = new Activity();
+        Activity reflection = new Activity();
+        Activity Listing = new Activity();
+        
         Console.WriteLine("You've accomplished the activities");
     }    
         
