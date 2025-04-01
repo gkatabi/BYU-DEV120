@@ -38,7 +38,7 @@ namespace Activities;
         Activity breath = new Activity();
         Activity reflection = new Activity();
         Activity Listing = new Activity();
-        
+
         Console.WriteLine("You've accomplished the activities");
     }    
         

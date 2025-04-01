@@ -1,39 +1,44 @@
 using System;
+using System.ComponentModel;
+namespace Programs;
 
-class Activity
-{
-    public string _activityDescription;
-    protected int _activityDuration = 3000 ;
-    private string _activityBreath ;
-    private string _activityEndMessage;
-    private string description;
-    private string breath;
-
-    public Activity(string breath)
+    class Activity
     {
-        this.breath = breath;
-    }
+        public string _activityDescription;
+        protected int _activityDuration = 3000 ;
+        private string _activityBreath ;
+        private string _activityEndMessage;
+        private string description;
+        private string breath;
+
+        public Activity(string breath)
+        {
+            this.breath = breath;
+        }
 
     //    private int duration;
 
 
-    public class Breath:Activity
-{
-    protected string _breath;
-    public void BreathOut(string breath)
+        public class Breath:Activity
     {
-    }
-        public Breath(string breath) : base(breath)
+        protected string _breath;
+        public void BreathOut(string breath)
         {
-            _breath  = breath;
-        } 
+        }
+            public Breath(string breath) : base(breath)
+            {
+                _breath  = breath;
+            } 
+        
+    
 
-}
 
 
 
-    public string Get_description()
-    {
+
+
+        public string Get_description()
+        {
         _activityDescription = description;
         return _activityDescription;
 
@@ -51,12 +56,6 @@ class Activity
 
     }
 
-
-    public  class Reflection: Activity
-    {
-
-    }
-    {
 
     }
 
