@@ -6,18 +6,33 @@ namespace Programs
 
     public class Activity
     {
-        private string _description= "Well  come to the mindfull activity";
-        private string _seconds = "";
+        private string _description= " ";
+        private  string _seconds = "";
         private string _prompts ="";
         private string _endMessage ="";
+
+        public string GetActivityInfo()
+        {
+            return $"{_description},{_prompts}";
+        }
+
+
         public string GetDescription()
         {
+           // Console.WriteLine("Welcome to the mindfull activities.They will be 3 only of which will relax your min.\nDo you want to continue? ");
             return _description;
 
         }
         public void SetDescription(string description )
         {
             _description = description;
+        }
+
+        static void GetActivity(string _descriptions,int _seconds,string _prompts,string _endMessage)
+        {
+            Console.WriteLine("Ok") ;
+
+
         }
 
 //      value for time delays chosen
@@ -57,81 +72,3 @@ namespace Programs
     }
 }
 
-//        public string _activityDescription;
-//        protected int _activityDuration = 3000 ;
-//        private string _activityBreath;
-//        private string _activityEndMessage;
-  
-//        private string description;
-//        private string breathe;
-
-//        public Activity(string breathe)
-//        {
-//            this.breathe = breathe;
-//        }
-
-    //    private int duration;
-
-
-//    public class Breath:Activity
-//    {
-//        protected string _breathe;
-//        public void BreathOut(string breathe)
-//        {
-//        }
-//        public Breath(string breathe) : base(breathe)
-//        {
-//            _breathe  = breathe;
-//        }
-
-//        public  string Breathe()
-//        {
-        
-//            return _breathe;
-//        }
-
-//        public string Get_description()
-//        {
-//        _activityDescription = description;
-//        return _activityDescription;
-
-//    }
-//    public void Set_activityDescription(string description )
-  
-//    {
-//        _activityDescription = description;
-//    }
-//    public  void  GetActivityEndMessage()
-//    {
-//        _activityEndMessage = "OK";
-//        Console.WriteLine("Tell me so");
-
-//    }
-
-//        internal static string GetBreath()
-//        {
-//            throw new NotImplementedException();
-//        }
-//    }
-
-//    public class Reflection:Activity
-//    {
-//        public string GetRandomPrompt;
-        
-//        public Reflection(string breathe = "breathe In",string randomPrompt="Think of a time when you stood up for someone else.") : base(breathe= "breathe in")
-//        { 
-//            string _randomPrompt  = randomPrompt;
-//            Console.WriteLine($"{_randomPrompt}");
-
-//        }
-
-
-//    public class Listing : Activity
-//    {
-//        public Listing(string breathe = "Breathe out!", string items = "",int itemsCount=5)   : base(breathe = "Breathe out!")
-//        {
-//            Console.WriteLine("List your items for me please");
-//        }
-//        }
-//    }
-//}

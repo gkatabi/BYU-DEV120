@@ -5,7 +5,24 @@ namespace Programs
 
     public class Breathe: Activity
     {
-        string _description ="it is a great previlage"; 
+        protected string _prompt = " ";
+        public string _breatheOption =" ";
+
+        public void GetPrompt(string prompt)
+        {
+            _prompt = prompt;
+            
+        }
+
+        public string GetBreathe()
+        {
+            return _breatheOption;
+        }
+        public void Set_breatheOption(string breatheOption)
+        {
+            _breatheOption = breatheOption;
+        } 
+
 
     }
 
