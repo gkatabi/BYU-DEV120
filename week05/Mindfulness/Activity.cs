@@ -1,15 +1,16 @@
 using System;
 //using System.ComponentModel;
 //using static Programs.Activity;
-namespace Programs
+namespace Documentss
 {
 
     public class Activity
     {
-        private string _description= " ";
-        private  string _seconds = "";
-        private string _prompts ="";
-        private string _endMessage ="";
+        protected string _description= " ";
+        protected  string _seconds = "";
+        protected string _breatheInfo = "Breathe in and hold still!";
+        protected string _prompts ="";
+        protected string _endMessage ="";
 
         public string GetActivityInfo()
         {

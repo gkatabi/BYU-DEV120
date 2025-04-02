@@ -1,16 +1,16 @@
 using System;
-namespace Programs
+namespace Mindfulness
 {
 
 
-    public class Breathe: Activity
+    public class Breathe
     {
         protected string _prompt = " ";
         public string _breatheOption =" ";
 
-        public void GetPrompt(string prompt)
+        public void GetPrompt()
         {
-            _prompt = prompt;
+            _prompt = _prompt;
             
         }
 
