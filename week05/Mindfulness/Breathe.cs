@@ -23,6 +23,12 @@ namespace Mindfulness
             _breatheOpt = breatheOpt;
         }
 
+        internal class SetDuration
+        {
+        }
     }
 
+    internal class Activity
+    {
+    }
 }  

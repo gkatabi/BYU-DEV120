@@ -1,12 +1,15 @@
 using System;
-namespace Mindfulness;
+namespace Mindfulness
+{
 
-    class Activity
+    public class Program
     {
-
-
+        Breathe breatheActivity = new Breathe();
+        Activity Breathe = new Activity();
+        
+    
     public static void Main(string[] args)
     {
         Console.WriteLine("Hello World! This is the ExerciseTracking Project.");
     }
-}
+}}

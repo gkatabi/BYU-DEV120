@@ -3,9 +3,9 @@ namespace Mindfulness;
 
     public class Activity
     {
-       protected int _duration;
+       protected int _duration  ;
        protected string _description = "";
-       protected int _timePause;
+       protected int _timePause ;
        protected string _endMessage = "";
 
        public Activity()
