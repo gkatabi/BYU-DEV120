@@ -1,6 +1,9 @@
 using System;
 namespace Mindfulness
 {
+    
+
+
 
     class Breathe : Activity
     {
@@ -17,18 +20,23 @@ namespace Mindfulness
         {
             return _breatheOpt;
         }
-
-        public void SetBreatheOpt(string breatheOpt)
-        {
-            _breatheOpt = breatheOpt;
-        }
-
-        internal class SetDuration
-        {
-        }
     }
+//        public void SetBreatheOpt(string breatheOpt)
+//        {
+//            _breatheOpt = breatheOpt;
+//        }
 
-    internal class Activity
+//        internal class SetDuration
+        
+        }
+
+
+//    internal class Activity
+//    {
+
+internal class Activity
+{
+    internal class Breathe
     {
     }
-}  
+}

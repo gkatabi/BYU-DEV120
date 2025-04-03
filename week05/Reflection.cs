@@ -5,7 +5,7 @@ namespace Mindfulness
     class Reflection : Activity
     {
         protected string _randomPrompt = " ";
-        protected string _reflect = " ";
+        protected string _reflect = "Think of a time when you stood up for someone else ";
     
         public Reflection()
         {
