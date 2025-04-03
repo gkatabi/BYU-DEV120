@@ -1,7 +1,7 @@
 using System;
 namespace Mindfulness;
 
-    class Program
+    class Activity
     {
 
 
