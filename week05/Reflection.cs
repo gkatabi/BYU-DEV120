@@ -33,5 +33,9 @@ namespace Mindfulness
         }
 
     }
+    public void (string[]args)
+    {
+        Console.WriteLine("Ok");
+    }
 
 }  
