@@ -20,7 +20,7 @@ namespace Mindfulness
        }
        public void SetDuration(int duration)
        {
-           _duration = duration;
+           _duration = 15;
        }
 
        public string  GetDescription()
@@ -34,7 +34,7 @@ namespace Mindfulness
 
        public int  GetTimePause()
        {
-            return _timePause;
+            return 15;
        }
        public void SetTimePause(int timePause)
        {
@@ -49,42 +49,7 @@ namespace Mindfulness
        {
            _endMessage = endMessage;
        }
-       public class Breathe
-       {
-            protected string _breatheOpt = "Breathe in !!! ";
-            private object _breatheOpt1;
-            private object breatheOpt1;
-
-            public Breathe ()
-            {
-                
-
-            }
-    
-            public string GetBreatheOpt()
-            {
-                return _breatheOpt;
-            }
-
-            public void SetBreatheOpt(string breatheOpt)
-            {
-                _breatheOpt = breatheOpt;
-            }
-            internal class BreatheOpt1
-            {
-                protected string _breatheOpt1 = "breathe in";
-
-            }
-            public string GetBreatheOpt1()
-            {
-                return _breatheOpt;
-            }
-
-            public void SetBreatheOpt1(string breatheOpt)
-            {
-                _breatheOpt1 = breatheOpt1;
-            }
-        }
+       
     }
      
 }

@@ -9,17 +9,24 @@ namespace Mindfulness
     {
 
     
-        protected string _breatheOpt = " ";
-    
+        protected string[] _breatheOpt = [" Breathe in !!!","Breathe out"];
         public Breathe ()
         {
 
+
         }
     
-        public string GetBreatheOpt()
+        public string[] GetBreatheOpt()
         {
+            string _breatheopt;
             return _breatheOpt;
         }
+        public static void SetBreatheOpt(string[] breatheOpt1)
+        {
+            string _breatheOpt1 = "Breathe in";
+        }
+
+
     }
 //        public void SetBreatheOpt(string breatheOpt)
 //        {

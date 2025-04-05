@@ -11,12 +11,14 @@ namespace Mindfulness
     
     public static void Main(string[] args)
     {
+        
     
         Console.WriteLine("You are welcome go the mindfull activities.The activities are:\n1). The breathing activity\n2). The reflection activity\n3). The Listing activity.\nPlease choose an activity by writing it's number.");
         string activity = Console.ReadLine();
         int Activity  = Convert.ToInt32($"{activity}");
         if (Activity == 1)
         {
+            
             Console.WriteLine("Write in numerals the seconds you want to spend on this breathing activity?");
             string Breathing = Console.ReadLine();
             int Breathe = Convert.ToInt32($"{Breathing}");
