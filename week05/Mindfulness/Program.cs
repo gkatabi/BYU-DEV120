@@ -6,12 +6,17 @@ namespace Mindfulness
     public class Program
     {
         Activity Activity = new Activity();
-        Activity Breathe = new Activity();
+
+        Activity Activity1 = new Activity();
     
         Breathe BreatheOpt = new Breathe();
+        public string _breatheOpt1 = "Breathe in !!!";
+        public string _breatheOpt2 = "Breathe out !!!";
         
         Activity Reflection = new Activity();
-        Activity Listing = new Activity();
+        private string[] _reflect = ["Think of a time when you stood up for someone else.\n ", "Think of a time when you did something really difficult.\n ","Think of a time when you helped someone in need.\n ","Think of a time when you did something truly selfless. "];
+        Activity List = new Activity();
+        protected string[] _listing = [];
 
          
     
