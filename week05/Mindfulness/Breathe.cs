@@ -19,27 +19,22 @@ namespace Mindfulness
         public string[] GetBreatheOpt()
         {
             string _breatheopt;
+
             return _breatheOpt;
         }
-        public static void SetBreatheOpt(string[] breatheOpt1)
+        public static void SetBreatheOpt(string breatheOpt1, string breatheOpt2)
         {
-            string _breatheOpt1 = "Breathe in";
+            string _breatheOpt1 = "Breathe in !!!";
+            Thread.Sleep(6000);
+            string _breatheOpt2 ="breathe out !!!";
+            
         }
 
-
+    
     }
-//        public void SetBreatheOpt(string breatheOpt)
-//        {
-//            _breatheOpt = breatheOpt;
-//        }
+  
+}
 
-//        internal class SetDuration
-        
-        }
-
-
-//    internal class Activity
-//    {
 
 internal class Activity
 {
