@@ -5,40 +5,54 @@ namespace Mindfulness
 
 
 
-    class Breathe : Activity
+    public class Breathe : Activity
     {
-
     
-        protected string[] _breatheOpt = [" Breathe in !!!","Breathe out"];
-        public Breathe ()
-        {
 
+        public void breatheOpt()
+        {
+            string _breatheOpt = " ";
 
         }
-    
-        public string[] GetBreatheOpt()
+    class Reflection: Activity
+    {
+        public void Reflect()
         {
-            string _breatheopt;
+            string _reflect = " ";
 
-            return _breatheOpt;
-        }
-        public static void SetBreatheOpt(string breatheOpt1, string breatheOpt2)
-        {
-            string _breatheOpt1 = "Breathe in !!!";
-            Thread.Sleep(6000);
-            string _breatheOpt2 ="breathe out !!!";
             
+        static void Main(string[]args)
+        {
+            Breathe BreatheOpt = new Breathe();
+            Breathe.breatheOpt();
+            {
+                Console.WriteLine("Breathe in !!!");
+                Thread.Sleep(6000);
+                Console.WriteLine("Breathe out !!!");
+            }
+
+            Breathe.breatheOpt();
+            Thread.Sleep(6000);
+    
         }
 
-    
     }
-  
+
 }
+    
 
 
 internal class Activity
 {
     internal class Breathe
     {
+        internal static void breatheOpt()
+        {
+            throw new NotImplementedException();
+        }
     }
-}
+}}
+
+    public class Activity
+    {
+    }}

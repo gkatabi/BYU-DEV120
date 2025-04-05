@@ -6,50 +6,51 @@ namespace Mindfulness
     public class Activity
     {
        protected int _duration = 15;
-       protected string _description = "Welcome to the Mindfull exercise.\nThree of these prompts will get you in a relaxed mood.";
+       protected string _description = " ";
+       protected string _breatheOpt = " ";
+       protected string _reflect = " ";
        protected int _timePause = 15;
        protected string _endMessage = "That relaxation which you feel,\nis what I mean.";
 
-       public Activity()
+       protected void duration ()
        {
-
-       }
-       public int  GetDuration()
-       {
-            return _duration;
-       }
-       public void SetDuration(int duration)
-       {
-           _duration = 15;
+           Console.WriteLine("How many minutes would you like to spend om this activity?");
        }
 
-       public string  GetDescription()
+       protected void  description()
        {
-            return _description;
-       }
-       public void SetDescription(string description)
-       {
-           _description = description;
+           
+           Console.WriteLine("Welcome to the Mindfull exercise.\nThree of these prompts will get you in a relaxed mood.");
        }
 
-       public int  GetTimePause()
+       protected void breatheOpt()
        {
-            return 15;
-       }
-       public void SetTimePause(int timePause)
-       {
-           _timePause = timePause;
+           Console.WriteLine("Breathe in !!!");
+           Thread.Sleep(6000);
+           Console.WriteLine("Breathe out !!!");
        }
 
-       public string  GetEndMessage()
+       public void timePause()
        {
-            return _endMessage;
-       }
-       public void SetEndMessage(string endMessage)
-       {
-           _endMessage = endMessage;
-       }
-       
+          Console.WriteLine("How many seconds do you want to take on it?");
+          string Items = Console.ReadLine();
+          int items = Convert.ToInt32(Items);
+          for (int item = items; items > 0; items--)
+            {
+                Thread.Sleep(items);
+                Console.Write("/");
+            }
+        }
+        protected void endMessage()
+        {
+            Console.WriteLine("That relaxation which you feel,\nis what I mean.");
+            timePause();
+            Thread.Sleep(6000);
+            Console.Write("/");
+        }
+
     }
-     
+
 }
+       
+    
