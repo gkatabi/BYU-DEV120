@@ -25,15 +25,11 @@ namespace Mindfulness
                     Thread.Sleep(1000);
                 
                 }
-                Console.WriteLine("Breathe out !!!");
-                Console.Write(">");
-                Thread.Sleep(6000);
-                Console.WriteLine("Breathe out !!!");
-                Console.Write(">");
-                Thread.Sleep(6000);
-                Console.WriteLine("Weldone");
-
-                
+    
+                int wis4 = Convert.ToInt32(Wish);
+            if (wish == 2)
+            {
+                Console.WriteLine("Welcome to the reflection activity.\nThe activity will train you to reflect for a while.\nHow many seconds would you want to take on each step? ");
                 Breathe breathe = new Breathe();
                  
                 Thread.Sleep( 6000);
@@ -48,7 +44,7 @@ namespace Mindfulness
             Console.WriteLine("Write the number that refers to the activity of your wish");
             string Wish1 = Console.ReadLine();
             int wish1 = Convert.ToInt32(Wish1);
-            if (wish1 == 1)
+            if (wish1 == 2)
             {
                 Console.WriteLine("Get ready.\nThe activity will train  you reflect on acheivements.\nHow many seconds do you wish to take reflecting? ");
                 string Interval1 = Console.ReadLine();
@@ -158,4 +154,4 @@ namespace Mindfulness
         }
         
     }
-}
+}}
