@@ -14,7 +14,24 @@ namespace Mindfulness
             string _breatheOpt = " ";
 
         }
-    class Reflection: Activity
+
+        internal string GetBreatheOpt()
+        {
+            return "Breathe deep !!!";
+            
+        }
+
+        internal string GetBreathOpt()
+        {
+            return "Breathe faster!!!";
+        }
+
+        internal string GetBreath()
+        {
+            return "Ok";
+        }
+
+        class Reflection: Activity
     {
         public void Reflect()
         {

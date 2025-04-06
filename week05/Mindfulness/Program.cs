@@ -7,6 +7,12 @@ namespace Mindfulness
     {
         public static void Main(string[] args)
         {
+            Breathe breathe = new Breathe();
+            string _breatheOpt = breathe.GetBreatheOpt();
+            Console.WriteLine("Breathe in !!!");
+            Thread.Sleep(6000);
+            Console.WriteLine("Breathe out !!!");
+
              
             Console.WriteLine("You are welcome go the mindfull activities.The activities are:\n1). The breathing activity\n2). The reflection activity\n3). The Listing activity.\nPlease choose an activity by writing it's number.");
             string activity = Console.ReadLine();
