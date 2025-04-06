@@ -74,6 +74,7 @@ namespace Mindfulness
 
        protected void breatheOpt()
        {
+           Console.WriteLine("Welcome to the breathing activity");
            Console.WriteLine("Breathe in !!!");
            Thread.Sleep(6000);
            Console.WriteLine("Breathe out !!!");

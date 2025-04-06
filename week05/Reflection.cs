@@ -9,6 +9,7 @@ namespace Mindfulness
     
         public Reflection()
         {
+            Cobsole.WriteLine("OK");
 
         }
     

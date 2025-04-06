@@ -11,7 +11,8 @@ namespace Mindfulness
 
         public void breatheOpt()
         {
-            string _breatheOpt = " ";
+            
+            string _breatheOpt = " "; 
 
         }
 
@@ -63,13 +64,20 @@ internal class Activity
 {
     internal class Breathe
     {
-        internal static void breatheOpt()
+        internal static string breatheOpt()
         {
-            throw new NotImplementedException();
+            string _breatheOpt = "breatheOpt ";
+            return "Breathe in now !!! ";
         }
     }
 }}
 
     public class Activity
     {
-    }}
+        internal string GetDescription()
+        {
+            string _description = "Welcome";
+            return _description;
+        }
+    }
+}
