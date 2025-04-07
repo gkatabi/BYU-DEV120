@@ -1,76 +1,73 @@
 using System;
-namespace Mindfulness
+using System.Collections.Generic;
+namespace Mindfulne
+
 {
+    class Breathe : Activity
+    {
+        protected string _breathe1 = " ";
+        protected string _breathe2 = " ";
     
 
-
-
-    public class Breathe : Activity
-    {
-    
-
-        public void breatheOpt()
+        public void BreatheOpt1()
         {
-            
-            string _breatheOpt = " "; 
 
-        }
 
-        internal string GetBreatheOpt()
-        {
-            return "Breathe deep !!!";
-            
-        }
-
-        internal string GetBreathOpt()
-        {
-            return "Breathe faster!!!";
-        }
-
-        internal string GetBreath()
-        {
-            return "Ok";
-        }
-
-        class Reflection: Activity
-    {
-        public void Reflect()
-        {
-            string _reflect = " ";
-
-            
-        static void Main(string[]args)
-        {
-            Breathe BreatheOpt = new Breathe();
-            Breathe.breatheOpt();
+            Console.WriteLine("How many seconds  will you spend on each here?");
+            string Jiffy = Console.ReadLine();
+            int jiffy = Convert.ToInt32(Jiffy);
+            for(int e = jiffy; e > 0; e--)
             {
-                Console.WriteLine("Breathe in !!!");
-                Thread.Sleep(6000);
-                Console.WriteLine("Breathe out !!!");
+                    
+                Console.Write(">");
+                Thread.Sleep(1000);
+                
             }
-
-            Breathe.breatheOpt();
+            Console.WriteLine("Breathe in !!!");
+            Console.Write(">");
             Thread.Sleep(6000);
-    
+            Console.WriteLine("Breathe out !!!");
+            Console.Write(">");
+            Thread.Sleep(6000);
         }
 
-    }
-
-}
-    
-
-
-internal class Activity
-{
-    internal class Breathe
-    {
-        internal static string breatheOpt()
+        public void BreatheOpt2()
         {
-            string _breatheOpt = "breatheOpt ";
-            return "Breathe in now !!! ";
+            Console.WriteLine("How many seconds  will you spend on each here?");
+            string Jiffy = Console.ReadLine();
+            int jiffy = Convert.ToInt32(Jiffy);
+            for(int e = jiffy; e > 0; e--)
+            {
+                    
+                Console.Write(">");
+                Thread.Sleep(1000);
+                
+            }
+            Console.WriteLine("Breathe in !!!");
+            Console.Write(">");
+            Thread.Sleep(6000);
+            Console.WriteLine("Breathe out !!!");
+            Console.Write(">");
+            Thread.Sleep(6000);
+
+        }
+
+//             space for coding brreathe in
+        public string breathe1
+        {
+            get{return _breathe1;}
+            set{_breathe1 = value;}
+        }
+
+//            Code breathe out
+
+        public string breathe2
+        {
+            get{return _breathe2;}
+            set{_breathe2 = value;}
         }
     }
-}}
+
 
     public class Activity
     {
