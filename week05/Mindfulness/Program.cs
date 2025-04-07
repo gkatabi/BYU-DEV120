@@ -1,13 +1,25 @@
 using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.Diagnostics;
 using System.Reflection.Metadata.Ecma335;
-namespace Mindfulness
+namespace Mindfull
 {
     public class Program
     {
+        private static object breathe1;
+
         public static void Main(string[] args)
         {
+            Breathe Breathe1 = new Breathe();
+             Thread.Sleep( 6000);
+                string _breathe1 = "Breathe in !!!";
+                Console.WriteLine(_breathe1);
+                Thread.Sleep(6000);
+
+            Breathe Breathe2 = new Breathe();
+
+
             Console.WriteLine("You are welcome go the mindfull activities.The activities are:\n1). The breathing activity\n2). The reflection activity\n3). The Listing activity.\nPlease choose an activity by writing it's number.");
             Thread.Sleep(3000);
             Console.WriteLine("Write the number that refers to the activity of your wish");
@@ -30,12 +42,16 @@ namespace Mindfulness
             if (wish == 2)
             {
                 Console.WriteLine("Welcome to the reflection activity.\nThe activity will train you to reflect for a while.\nHow many seconds would you want to take on each step? ");
-                Breathe breathe = new Breathe();
-                 
-                Thread.Sleep( 6000);
-                string _breatheOpt = breathe.GetBreatheOpt();
-                Console.WriteLine(breathe );
-                Thread.Sleep(6000);
+                string Time = Console.ReadLine();
+                int time = Convert.ToInt32(Time);
+                for(int e = time; e > 0; e--)
+                {
+                    
+                    Console.Write(">");
+                    Thread.Sleep(1000);
+                
+                }
+            
             }
 
 
@@ -85,12 +101,7 @@ namespace Mindfulness
                 Console.WriteLine("Weldone");
 
                 
-                Breathe breathe = new Breathe();
-                 
-                Thread.Sleep( 6000);
-                string _breatheOpt = breathe.GetBreatheOpt();
-                Console.WriteLine(breathe );
-                Thread.Sleep(6000);
+                
             }
 //            Console.WriteLine("Breathe out low");
 
@@ -154,4 +165,16 @@ namespace Mindfulness
         }
         
     }
-}}
+}
+
+    internal class Listing
+    {
+    }
+
+    internal class Breathe
+    {
+        public Breathe()
+        {
+        }
+    }
+}

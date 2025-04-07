@@ -33,7 +33,7 @@ namespace Mindfulness
             string Wish1 = Console.ReadLine();
             int wish1 = Convert.ToInt32(Wish1);
             if (wish1 == 2)
-            Console.WriteLine("Welcome to the reflection activity.\nThe activity will train you to reflect for a while.\nHow many seconds would you want to take on each step? ");
+                Console.WriteLine("Welcome to the reflection activity.\nThe activity will train you to reflect for a while.\nHow many seconds would you want to take on each step? ");
                 string Interval1 = Console.ReadLine();
                 int interval1 = Convert.ToInt32(Interval);
                 for(int e = interval1; e > 0; e--)
@@ -129,7 +129,7 @@ namespace Mindfulness
 
 
                 Console.WriteLine("Weldone")
-
+            }
         }
         public class RandomPrompt: Reflction
         {
@@ -148,7 +148,7 @@ namespace Mindfulness
         
                 return selectedItems;
             }
-
+        }
         public string GetRandomPrompt()
         {
             return _randomPrompt;
