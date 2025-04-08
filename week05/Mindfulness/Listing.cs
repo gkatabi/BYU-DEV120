@@ -34,7 +34,7 @@ namespace Mindfulness
 
     }
 
-    internal class Activity
-    {
-    }
+//    internal class Activity
+//    {
+//    }
 }  

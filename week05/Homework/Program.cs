@@ -2,8 +2,24 @@ using System;
 
 class Program
 {
-    static void Main(string[] args)
+    public class Assignment
     {
-        Console.WriteLine("Hello World! This is the Homework Project.");
+        protected string _studentName;
+        protected string _topic;
     }
+
+    static void Main(string[] args)
+    { 
+        GetStudentName();
+        Console.WriteLine();
+    }
+
+    public static string GetStudentName()
+    {
+        string studentName = "Godfrey";
+        string _studentName = studentName;
+        return studentName;
+        
+    }
+
 }
