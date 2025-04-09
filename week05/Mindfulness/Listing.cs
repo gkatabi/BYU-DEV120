@@ -4,37 +4,82 @@ namespace Mindfulness
 
     class Listing : Activity
     {
-        protected string _listedItems = " ";
-        protected string _numberOfItems = " ";
+        protected string _listedItems;
+        protected string _numberOfItems;
     
-        public Listing()
+        protected void ListedItems()
         {
-
+            for(int e = 10; e > 0; e--)
+            {
+                    
+                Console.Write(">");
+                Thread.Sleep(1000);
+                
+            }
+            Console.WriteLine("You ");
         }
     
-        public string GetListedItems()
+        protected void  ListedItems(string listedItems)
         {
-            return _listedItems;
+            for(int e = 10; e > 0; e--)
+            {
+                    
+                Console.Write(">");
+                Thread.Sleep(1000);
+                
+            }
+            Console.WriteLine("You "+ listedItems);  
         }
 
-        public void SetListedItems(string listedItems)
+        protected void NumberOfItems()
         {
-            _listedItems = listedItems;
+            for(int e = 10; e > 0; e--)
+            {
+                    
+                Console.Write(">");
+                Thread.Sleep(1000);
+                
+            }
+            Console.WriteLine("A total of ");
+            
+
         }
 
-        public string GetNumberOfItems()
+        protected void NumberOfItems(string numberOfItems)
         {
-            return _numberOfItems;
+            for(int e = 10; e > 0; e--)
+            {
+                    
+                Console.Write(">");
+                Thread.Sleep(1000);
+                
+            }
+            Console.WriteLine("A total of "+ numberOfItems);
         }
 
-        public void SetNumberOfItems(string numberOfItems)
-        {
-            _numberOfItems = numberOfItems;
-        }
+    }    
 
-    }
+}
+
+
+//        public void SetListedItems(string listedItems)
+//        {
+//            _listedItems = listedItems;
+//        }
+
+//        public string GetNumberOfItems()
+//        {
+//            return _numberOfItems;
+//        }
+
+//        public void SetNumberOfItems(string numberOfItems)
+//        {
+//            _numberOfItems = numberOfItems;
+//        }
+
+//    }
 
 //    internal class Activity
 //    {
 //    }
-}  
+//}  
