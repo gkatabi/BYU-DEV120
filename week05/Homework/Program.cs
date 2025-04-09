@@ -1,25 +1,51 @@
 using System;
-
-class Program
+namespace Homework
 {
-    public class Assignment
+    class Student
     {
-        protected string _studentName;
-        protected string _topic;
-    }
 
-    static void Main(string[] args)
-    { 
-        GetStudentName();
-        Console.WriteLine();
-    }
+        public class Students
+        {
+            public string _firstName ;
+            public string _lastName ;
 
-    public static string GetStudentName()
+    public class Assignments
     {
-        string studentName = "Godfrey";
-        string _studentName = studentName;
-        return studentName;
-        
-    }
+        public string _topic;
+        public string _assignment;
+    }   
+//        }
+    
+        static void Main(string[] args)
+        {
+            Students student = new Students();
+            student.FirstName("Godfrey");
+            student.LastName("Katabira"); 
 
+            Assignment maths = new Assignment();
+            maths.assignment(" Caliculations,");
+            maths.topic(" fumndamentals");             
+        }
+
+            private void LastName(string lastName)
+            {
+                Console.WriteLine(", "+ lastName);   
+            }
+
+            private void FirstName(string firstName)
+            {
+                Console.WriteLine("Mr. "+firstName);    
+            }
+
+            private void topic(string topic)
+            {
+                
+            }
+
+            private void assignment(string assignment)
+            {
+               
+            }
+        }
+    }
 }
