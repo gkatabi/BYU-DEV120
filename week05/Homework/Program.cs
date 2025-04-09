@@ -4,12 +4,12 @@ namespace Homework
     class Student
     {
 
-        public class Students
-        {
-            public string _firstName ;
-            public string _lastName ;
+    public class Students
+    {
+        public string _firstName ;
+        public string _lastName ;
 
-    public class Assignments
+    class Assignments
     {
         public string _topic;
         public string _assignment;
