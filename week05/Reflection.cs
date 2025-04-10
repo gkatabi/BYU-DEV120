@@ -6,10 +6,31 @@ namespace Mindfulness
     class Reflection : Activity
     {
         protected string _randomOpt;
-        protected string _reflect;
+        protected string{} _reflect ;// {"1.Why was this experience meaningful to you? ","2.Have you ever done anything like this before? ","3 How did you get started? ","4 How did you feel when it was complete? ","5 What made this time different than other times when you were not as successful? ","6 What is your favorite thing about this experience? ","7 What could you learn from this experience that applies to other situations? "};
     
         protected void ReflectionrandomOpt()
         {
+            Console.WriteLine("1. Think of a time when you stood up for someone else.");//\n 2). Think of a time when you did something really difficult.\n 3). Think of a time when you helped someone in need.\n4). Think of a time when you did something truly selfless. ");
+            string 
+            <RandomOpt>(List<RandomOpt> list, int npublic static List<RandomOpt> SelectRandomElements)
+            {
+                <RandomOpt>(List<RandomOpt> list, int npublic static List<RandomOpt> SelectRandomElements)
+                {
+                    RandomOpt randomOPt = new RandomOpt();
+                    List<RandomOpt> selectedItems = new List<RandomOpt>();
+
+                    for (int i = 0; i < n; i++)
+                    {
+                        if (list.Count == 0) break;  
+                        int index = randomOpt.Next(list.Count);  
+                        selectedItems.Add(list[index]);
+                        list.RemoveAt(index);  
+                    }
+        
+                    return selectedItems;
+                }
+
+
             for(int e = 10; e > 0; e--)
             {
                     
@@ -31,6 +52,26 @@ namespace Mindfulness
 
         protected void Reflectionreflect()
         {
+            Console.WriteLine("1. Think of a time when you stood up for someone else.");//\n 2). Think of a time when you did something really difficult.\n 3). Think of a time when you helped someone in need.\n4). Think of a time when you did something truly selfless. ");
+            string 
+            <ReflectionReflect>(List<ReflectionReflect> list, int npublic static List<ReflectionReflect> SelectRandomElements)
+            {
+                <RandomOpt>(List<ReflectionReflect> list, int npublic static List<ReflectionReflect> SelectReflectionElements)
+                {
+                    ReflectionReflect reflectionReflect = new ReflectionReflect();
+                    List<ReflectionReflect> selectedItems = new List<ReflectReflect>();
+
+                    for (int i = 0; i < n; i++)
+                    {
+                        if (list.Count == 0) break;  
+                        int index = reflectReflect.Next(list.Count);  
+                        selectedItems.Add(list[index]);
+                        list.RemoveAt(index);  
+                    }
+        
+                    return selectedItems;
+                }
+            Console.WriteLine( )
             for(int e = 10; e > 0; e--)
             {
                     
@@ -83,7 +124,7 @@ namespace Mindfulness
 //        public RandomOpt()
 //         public class RandomOpt: Reflction
 //        {
-//            public static List<RandomOpt> SelectRandomElements<RandomOpt>(List<RandomOpt> list, int n)
+//            <RandomOpt>(List<RandomOpt> list, int npublic static List<RandomOpt> SelectRandomElements)
 //            {
 //                RandomOpt randomOPt = new RandomOpt();
 //                List<RandomOpt> selectedItems = new List<RandomOpt>();
@@ -147,7 +188,7 @@ namespace Mindfulness
 //                Console.WriteLine("What could you learn from this experience that applies to other situations?");
 //                Console.Write(">");
 //                Thread.Sleep(6000);
-//                Console.WriteLine("What did you learn about yourself through this experience?");
+//                Console.WriteLine(h);
 //                Console.Write(">");
 //                Thread.Sleep(6000);
 

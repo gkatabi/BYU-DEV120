@@ -61,25 +61,3 @@ namespace Mindfulness
 
 }
 
-
-//        public void SetListedItems(string listedItems)
-//        {
-//            _listedItems = listedItems;
-//        }
-
-//        public string GetNumberOfItems()
-//        {
-//            return _numberOfItems;
-//        }
-
-//        public void SetNumberOfItems(string numberOfItems)
-//        {
-//            _numberOfItems = numberOfItems;
-//        }
-
-//    }
-
-//    internal class Activity
-//    {
-//    }
-//}  
