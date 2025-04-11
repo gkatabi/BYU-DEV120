@@ -5,11 +5,12 @@ namespace EternalQuest
     {
         protected string _description;
         protected string _howOften;
-        protected string _rewards;
+        protected char _markIt;
         protected string _time; 
         protected int _calculations;
-        protected char _markIt;
-
+        protected string _rewards;
+    
+    
     public void Description()
     {
         Console.WriteLine(" ");
@@ -23,10 +24,19 @@ namespace EternalQuest
     {
         Console.WriteLine(" ");
     }
+
     public void HowOften(string howOften)
     {
         Console.WriteLine(" "+ howOften);
     } 
+    public void MarkIt()
+    {
+        Console.WriteLine(" ");
+    }
+    public void MarkIt(string markIt)
+    {
+        Console.WriteLine( " "+markIt);
+    }
 
     public void Rewards()
     {
@@ -54,28 +64,6 @@ namespace EternalQuest
     public void Calculations(string calculations)
     {
         Console.WriteLine(" "+ calculations);
-    }
-
-
-    public void MarkIt()
-    {
-        Console.WriteLine(" ");
-    }
-    public void MarkIt(string markIt)
-    {
-        Console.WriteLine( " "+markIt);
-    }
-
-
-
-
-     
-
-
-    
-
-
-
     }
 
     public class IDid
@@ -146,5 +134,5 @@ namespace EternalQuest
     {
         Console.WriteLine(" "+ following);
     }
-
+    }
 }}}
