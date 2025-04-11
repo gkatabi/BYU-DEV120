@@ -3,9 +3,12 @@ namespace EternalQuest
 {
     class Goals
     {
-    public class Goal
+        private string description;
+
+        public class Goal
     {
-        protected string _description;
+        public string _description;
+        protected string _goalType;
         protected string _howOften;
         protected string _rewards;
         protected string _time; 
@@ -18,10 +21,31 @@ namespace EternalQuest
         protected string _toImpress;
 
     }
+
+    public class SaveMoney
+    {
+        protected string _enoughFor;
+        protected string _every;
+
+    }
     static void Main(string[] args)
     {
-        
-        Console.WriteLine("Hello World! This is the EternalQuest Project.");
+        Goals goal  = new Goals ();
+        goal.Description("These are they");
+        goal.GoalType("I have");
+        Money saveMoney  = new Money();
+        Console.WriteLine("Ok");
     }
-}}
+
+        private void GoalType(string drscription)
+        {
+            Console.WriteLine("All"+description);
+        }
+
+        public void Description(string msg)
+        {
+            Console.WriteLine("Only you ");
+        }
+    }
+}
 

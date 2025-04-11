@@ -4,6 +4,7 @@ namespace EternalQuest
     public class Goal
     {
         protected string _description;
+        protected string _goalType;
         protected string _howOften;
         protected char _markIt;
         protected string _time; 
@@ -13,11 +14,20 @@ namespace EternalQuest
     
     public void Description()
     {
-        Console.WriteLine(" ");
+        Console.WriteLine("These are either eternal or motal quests");
     }
     public void Description(string description)
     {
         Console.WriteLine(" "+ description);
+    }
+
+    public void GoalTYpe()
+    {
+        Console.WriteLine(" ");
+    }
+    public void GoalType(string goalType)
+    {
+        Console.WriteLine(" "+ goalType);
     }
 
     public void HowOften()

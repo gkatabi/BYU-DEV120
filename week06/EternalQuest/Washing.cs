@@ -1,7 +1,7 @@
 using System;
 namespace EternalQuest
 {
-    public class Wash: Goal
+    public class Wash
     {
         protected string _betterThan;
         protected string _toImpress;
@@ -25,7 +25,7 @@ namespace EternalQuest
 
 
     }
-    public class Never2: Goal
+    public class Never2
     {
         protected string _waitUntill;
         protected string _sniffUnderMy;
@@ -54,7 +54,7 @@ namespace EternalQuest
         Console.WriteLine(" " + sniffUnderMy);
     }
 
-    public class Always2: Goal
+    public class Always2
     {
         protected int _howManyTimesADay;
         protected string _alwaysBe;
