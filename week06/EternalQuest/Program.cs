@@ -1,105 +1,188 @@
 using System;
 namespace EternalQuest
 {
-    class Goals
+    class Reading
     {
-//        private static object goalType2;
 
-//        public static object goalType1 { get; private set; }
-
-        public class Goal
+    public class Readings
     {
-        public string _description;
-        protected string _goalType1;
-        protected string _goalType2;
+        public string _readingOne ;
+        public string _readingTwo ;
+            private static object reward;
 
-        protected string _howOften;
-        protected string _rewards;
-        protected string _time; 
-        protected int _calculations;
-        protected char _markIt;
+            class Rewards
+    {
+        public string _value;
+        public int _reward;
+    }   
+//        }
+    
+        static void Main(string[] args)
+        {
+            Readings reading = new Readings();
+            reading.ReadingOne("Book of mormon");
+            reading.ReadingTwo("The bible"); 
 
-            internal void Goals(string[] goalType1)
+            Reward number = new Reward();
+            number.reward(100);
+            Reward reward = new Reward();
+            reward.value("🗸 ");             
+        }
+
+            public void ReadingOne(string readingOne)
             {
-                Console.WriteLine("These are eternal and non eternal goals: "+goalType1 );
+                Console.WriteLine("How many chapters were read in the book of mormon? ");
+                string HowMany = Console.ReadLine();
+                int howMany = Convert.ToInt32(HowMany);
+                if(howMany>2)
+                {
+                    Console.WriteLine("Read the "+readingOne+ howMany+"times 🗸");
+                }
+                else 
+                {
+                    Console.WriteLine("Read the "+readingOne+ howMany);
+                }   
             }
 
-            internal static void goalType1(string v)
+            private void ReadingTwo(string readingTwo)
             {
-                throw new NotImplementedException();
+                Console.Write("And how many chapters did you read in the bible?: ");
+                string HowMany2 = Console.ReadLine();
+                int howMany2 = Convert.ToInt32(HowMany2);
+                if(howMany2>2)
+                {
+                    Console.WriteLine("Have read the "+readingTwo+ howMany2+"times 🗸");
+                }
+                else 
+                {
+                    Console.WriteLine("Read the "+readingTwo+ howMany2);
+                }  
+                Console.WriteLine("Spiritual moments of: "+ readingTwo);    
             }
 
-            internal void goal(string v)
+            private void topic(char value)
             {
-                throw new NotImplementedException();
+                
             }
-        }
-    public class Wash
-    {
-        protected string _betterThan;
-        protected string _toImpress;
 
-    }
-
-    public class SaveMoney
-    {
-        protected string _enoughFor;
-        protected string _every;
-
-            internal void saveMoney(string noney)
+            private void assignment(string reward)
             {
-                throw new NotImplementedException();
+               
             }
-        }
-    static void Main(string[] args)
-    {
-        Goals goal  = new Goals ();
-        Goal description = new Goal();
-        description.goal("These are eternal and non eternal goals");
-        goal.Description("These are they");
-        Goal goalType = new Goal();
-        goal.goalType1("");
-        goal.goalType2("");
-        goal.GoalType("I have");
-        Goal howOften = new Goal();
-        howOften.goal("");
-        Goal rewards = new Goal();
-        rewards.goal(" ");
-        Goal time = new Goal();
-        time.goal(" ");
-        Goal caliculations = new Goal();
-        caliculations.goal(" ");
-        Goal markIt = new Goal();
-        markIt.goal("");
-        SaveMoney enoughFor  = new SaveMoney();
-        enoughFor.saveMoney(" ");
-        SaveMoney every = new SaveMoney();
-        every.saveMoney("always ");
-        Console.WriteLine("Ok");
-        
-
-
-    }
-
-        private void goalType2(string v)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void goalType1(string v)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void GoalType(string description)
-        {
-            Console.WriteLine("All"+description);
-        }
-
-        public void Description(string msg)
-        {
-            Console.WriteLine("Only you ");
         }
     }
 }
+
+
+
+
+
+
+
+
+
+//using System;
+//namespace EternalQuest
+//{
+//    class Goals
+//    {
+        
+
+        //    public static object M { get; private set; }
+
+        //        private static object goalType2;
+
+        //        public static object goalType1 { get; private set; }
+
+//        public class Goal
+//    {
+//        public string _description;
+//        protected string _goalType1;
+//        protected string _goalType2;
+
+//        protected string _howOften;
+//        protected int _rewards;
+//        protected string _time; 
+        
+
+//            internal string Goals(string goalType1)
+//            {
+//                return(goalType1 );
+//            }
+
+//            internal static string goalType1(string goalType2)
+//            {
+//                return(goalType2);
+//            }
+
+//            internal void goal(string goal)
+//            {
+//                Console.WriteLine("These are eternal and non eternal goals");
+//            }
+//        }
+//    public class Wash
+//    {
+//        protected string _betterThan;
+//        protected string _toImpress;
+
+//    }
+
+//    public class SaveMoney
+//    {
+//        protected string _enoughFor;
+//        protected string _every;
+
+//            internal object saveMoney(string saveMoney)
+//            {
+//                return(saveMoney);
+//            }
+//        }
+//    static void Main(string[] args)
+//    {
+//        Goals goal  = new Goals ();
+//        Description description = new Goal();
+//        description.goal("These are eternal and non eternal goals");
+//        goal.Description("The Eternal goals are never accomplished & motal ones do");
+//        Goal goalType = new Goal();
+//        goal.goalType1("Eternal type of every year");
+//        goal.goalType2("all those past months");
+
+//        Goal howOften = new Goal();
+//        howOften.goal("Once");
+//        Goal rewards = new Goal();
+//            object M = +100;
+//            rewards.goal (0+$"{M}");
+//        Goal time = new Goal();
+//        time.goal(" ");
+//        SaveMoney enoughFor  = new SaveMoney();
+//        enoughFor.saveMoney(" ");
+//        SaveMoney every = new SaveMoney();
+//        every.saveMoney("always ");
+//        Console.WriteLine("Ok");
+        
+
+
+//    }
+
+//        public string goalType2(string goalType2)
+//        {
+//            return("all those past months");
+//        }
+
+//        private void goalType1(string goalType1)
+//        {
+//            Console.WriteLine(" ever ");
+//        }
+
+//        private void GoalType(string description)
+//        {
+//            Console.WriteLine("All"+description);
+//        }
+
+//        public void Description(string msg)
+//        {
+//            Console.WriteLine("Only you ");
+//        }
+//    }
+//}
 
