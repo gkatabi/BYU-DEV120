@@ -1,9 +1,11 @@
 using System;
-
-class Program
+using ExerciseTracking
 {
-    static void Main(string[] args)
+    class Program
     {
-        Console.WriteLine("Hello World! This is the ExerciseTracking Project.");
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World! This is the ExerciseTracking Project.");
+        }
     }
 }
