@@ -14,11 +14,22 @@ namespace EternalQuest
     {
         public string _value;
         public int _reward;
-    }   
+    }
+
+    public class Emoji
+    {
+        public const string Heavy_Check_Mark = "✔";
+
+                internal void emoji(string heavy_Check_Mark )
+                {
+                    Console.WriteLine("✔");
+                }
+            }      
 //        }
     
         static void Main(string[] args)
         {
+            
             Readings reading = new Readings();
             reading.ReadingOne("Book of mormon");
             reading.ReadingTwo("The bible"); 
@@ -26,7 +37,9 @@ namespace EternalQuest
             Reward number = new Reward();
             number.reward(100);
             Reward reward = new Reward();
-            reward.value("🗸 ");             
+            reward.value("🗸 ");
+            Emoji emoji = new Emoji();
+            emoji.emoji("🗸 ");            
         }
 
             public void ReadingOne(string readingOne)
