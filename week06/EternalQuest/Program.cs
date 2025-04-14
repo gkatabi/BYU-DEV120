@@ -80,12 +80,8 @@ namespace EternalQuest
                 }   
                 Console.WriteLine($"{howMani} is great");
                 
-                Console.WriteLine("Have read the it those times ");
-                }
-//                else 
-//                {
- //                   Console.WriteLine("Read the " + readingTwo + howMani);
-//                }  
+                Console.WriteLine("Read the " + readingTwo + howMani);
+                }  
 //                Console.WriteLine("Then the bible: " + howMani);    
 //            }
 
