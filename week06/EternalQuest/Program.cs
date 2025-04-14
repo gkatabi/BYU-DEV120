@@ -46,18 +46,18 @@ namespace EternalQuest
 
             private void ReadingTwo(string readingTwo)
             {
-                Console.Write("And how many chapters did you read in the bible?: ");
-                string HowMany2 = Console.ReadLine();
-                int howMany2 = Convert.ToInt32(HowMany2);
-                if(howMany2>2)
+                Console.Write("And how many chapters did you read from the bible?: ");
+                string HowMani = Console.ReadLine();
+                int howMani = Convert.ToInt32(HowMani);
+                if(howMani>2)
                 {
-                    Console.WriteLine("Have read the "+readingTwo+ howMany2+"times 🗸");
+                    Console.WriteLine("Have read the it those times ");
                 }
                 else 
                 {
-                    Console.WriteLine("Read the "+readingTwo+ howMany2);
+                    Console.WriteLine("Read the " + readingTwo + howMani);
                 }  
-                Console.WriteLine("Spiritual moments of: "+ readingTwo);    
+                Console.WriteLine("Then the bible: " + howMani);    
             }
 
             private void topic(char value)
