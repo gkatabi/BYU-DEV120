@@ -9,11 +9,11 @@ namespace EternalQuest
     
     public void reward()
     {
-        Console.WriteLine("...have earned: ");  
+        Console.WriteLine("...you've earned: ");  
     }
     public void reward(int number)
     {
-        Console.WriteLine("...have earned: "+ number);
+        Console.WriteLine("...you've earned: "+ number);
     }
 
     public void value()
