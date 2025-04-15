@@ -47,7 +47,7 @@ namespace ExerciseTracking
     static void Main(string[] args)
     {
         Dues dues = new Dues();
-        dues.day(12);
+        dues.day();
         dues.month(8);
         dues.year(2025);
         dues.hours(7);
@@ -69,34 +69,35 @@ namespace ExerciseTracking
         Console.WriteLine("Hello World! This is the ExerciseTracking Project.");
     }
 
-            protected void minutes(float minutes)
+            protected static void minutes(float minutes)
             {
-                throw new NotImplementedException();
+                int minutes1 = 267;
+                Console.WriteLine("mins: "+ 267 );
             }
 
             protected void seconds(float seconds)
             {
-                throw new NotImplementedException();
+                Console.WriteLine("Sec: " + 6765.76 );
             }
 
-            protected void hours(float hours)
+            protected void Hours(float hours)
             {
-                throw new NotImplementedException();
+                Console.WriteLine("Hrs: "+ 13 );
             }
 
-            protected void year(int year)
+            protected void Year(int year)
             {
-                throw new NotImplementedException();
+                Console.WriteLine("Year: "+ 2024 );
             }
 
-            protected void month(int month)
+            protected void Month(int month)
             {
-                throw new NotImplementedException();
+                Console.WriteLine("Mnth:"+ 6 );
             }
 
-            protected void day(int day)
+            protected void Day(int day)
             {
-                throw new NotImplementedException();
+                Console.WriteLine("Day:"+10 );
             }
         }
 }}

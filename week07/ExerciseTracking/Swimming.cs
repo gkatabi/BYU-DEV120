@@ -1,10 +1,10 @@
 using System;
-using ExerciseTracking;
+namespace ExerciseTracking
 {
-    protected class Swimming:Due
+    public class Swimmings:Due
     {
         protected float _numberOfLaps;
-    }
+    
 
     protected void NumberOfLaps()
     {
@@ -14,8 +14,15 @@ using ExerciseTracking;
     {
         Console.WriteLine($"Laps ran were: {numberOfLaps} ");
     }
-      
 
+        internal void mumberOfLaps()
+        {
+            throw new NotImplementedException();
+        }
 
-    
+        internal void numberOfLaps()
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
