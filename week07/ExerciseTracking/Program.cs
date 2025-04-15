@@ -1,7 +1,7 @@
 using System;
-using ExerciseTracking;
+namespace ExerciseTracking
 {
-    class Due 
+    public static class Program 
     {
 
     public class Dues
@@ -12,12 +12,28 @@ using ExerciseTracking;
         protected float _hours;
         protected float _minutes ;
         protected float _seconds ;
-
+    
     protected class Runnings
     {
         protected float _lapMiles;
         protected float _lapKilometers;
-    protected class Swimmings
+
+                internal void lapMiles()
+                {
+                    throw new NotImplementedException();
+                }
+
+                internal void lapKilometers()
+                {
+                    throw new NotImplementedException();
+                }
+
+                internal void laps()
+                {
+                    throw new NotImplementedException();
+                }
+            }
+    protected class Swimming
     {
         protected float _numberOfLaps;
 
@@ -27,29 +43,60 @@ using ExerciseTracking;
     }
 
     
-    
-        static void Main(string[] args)
-        {
-            Dues due = new Dues();
-            due.day(18);
-            due.month(4);
-            due.(2024);
-            due.hours(5.23);
-            due.minutes(25);
-            due.seconds(364.74);
+    }
+    static void Main(string[] args)
+    {
+        Dues dues = new Dues();
+        dues.day(12);
+        dues.month(8);
+        dues.year(2025);
+        dues.hours(7);
+        dues.minutes(6);
+        dues.seconds(69);
 
-            Running running = new Running();
-            running.lapMiles();
-            running.lapKilometers();
-            running.laps( );
-            Swimming swimming = new Swimming();
-            swimming.mumberOfLaps();
-            Cyling cycling = new Cycling();
-            cycling.miles1 ();
-            cycling.kilometers1( );
-            cycling.hours1( );
-            cycling.pace( );
-            Console.WriteLine("Hello World! This is the ExerciseTracking Project.");
+        Runnings runnings = new Runnings();
+        runnings.lapMiles( );
+        runnings.lapKilometers();
+        runnings.laps( );
+        Swimmings swimmings = new Swimmings();
+        swimmings.numberOfLaps();
+        Cyclings cyclings = new Cyclings();
+        cyclings.miles1 ();
+        cyclings.kilometers1( );
+        cyclings.hours1( );
+        cyclings.pace( );
+        cyclings.speed();
+        Console.WriteLine("Hello World! This is the ExerciseTracking Project.");
+    }
+
+            protected void minutes(float minutes)
+            {
+                throw new NotImplementedException();
+            }
+
+            protected void seconds(float seconds)
+            {
+                throw new NotImplementedException();
+            }
+
+            protected void hours(float hours)
+            {
+                throw new NotImplementedException();
+            }
+
+            protected void year(int year)
+            {
+                throw new NotImplementedException();
+            }
+
+            protected void month(int month)
+            {
+                throw new NotImplementedException();
+            }
+
+            protected void day(int day)
+            {
+                throw new NotImplementedException();
+            }
         }
-    }
-}}}}
+}}
