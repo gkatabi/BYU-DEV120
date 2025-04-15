@@ -1,24 +1,24 @@
 using System;
-using ExerciseTracking;
+namespace ExerciseTracking
 {
-    protected class Due
+    public class Due
     {
-        protected int _day;
-        protected int  _month;
-        protected int  _year;
-        protected float _hours;
-        protected float _minutes ;
-        protected float _seconds ;
+        protected int _day = 4;
+        protected int  _month = 7;
+        protected int year = 2025;
+        protected float _hours=3;
+        protected float _minutes = 180;
+        protected float _seconds = 797678;
         
-    }
+    
 
     public void Date()
     {
-        Console.WriteLine("On: ")
+        Console.WriteLine("On: ");
     }
     public void Day(int day,int month,int year)
     {
-        Clnsole.Write($"On {day}/  {month}/ {year}");
+        Console.Write($"On {day}/  {month}/ {year}");
     }
     public void  Time () 
     {
@@ -27,7 +27,7 @@ using ExerciseTracking;
     }
     public void Time (int hours, int minutes, int seconds)
     {
-        Console.WriteLine($"Time was:{hours}:{minutes}:{seconds} ")
+        Console.WriteLine($"Time was:{hours}:{minutes}:{seconds} ");
     }
-}    
+}}    
 
