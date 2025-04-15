@@ -1,15 +1,33 @@
 using System;
-using ExerciseTracking
+using ExerciseTracking;
 {
-    protected class Date
+    protected class Due
     {
-        protected char _date;
-
-    } 
-
-    protected class Time
-    {
-        protected int _seconds;
-
+        protected int _day;
+        protected int  _month;
+        protected int  _year;
+        protected float _hours;
+        protected float _minutes ;
+        protected float _seconds ;
+        
     }
+
+    public void Date()
+    {
+        Console.WriteLine("On: ")
+    }
+    public void Day(int day,int month,int year)
+    {
+        Clnsole.Write($"On {day}/  {month}/ {year}");
+    }
+    public void  Time () 
+    {
+    
+        Console.Write("Time was: ");
+    }
+    public void Time (int hours, int minutes, int seconds)
+    {
+        Console.WriteLine($"Time was:{hours}:{minutes}:{seconds} ")
+    }
+}    
 
