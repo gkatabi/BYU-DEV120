@@ -20,7 +20,7 @@ namespace ExerciseTracking
 
         internal void lapMiles()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Miles in those laps were: "+ 12/7  );
         }
     }
 }

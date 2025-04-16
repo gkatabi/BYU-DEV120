@@ -58,27 +58,28 @@ namespace ExerciseTracking
 
         internal void miles1()
         {
-            throw new NotImplementedException();
+            
+            Console.WriteLine("Cycled Miles: 12");
         }
 
         internal void kilometers1()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Kilometers in that were: 24");
         }
 
         internal void hours1()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("With in only hours: 7");
         }
 
         internal void speed()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("At a speed of km/hr: "+ 24/7);
         }
 
         internal void pace()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("At a constgant pace of: "+  10/5);
         }
     }
 }

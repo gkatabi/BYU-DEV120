@@ -20,17 +20,17 @@ namespace ExerciseTracking
 
                 internal void lapMiles()
                 {
-                    throw new NotImplementedException();
+                    Console.WriteLine("Laps were: 13");
                 }
 
                 internal void lapKilometers()
                 {
-                    throw new NotImplementedException();
+                    Console.WriteLine("Laps kilometers: 33");
                 }
 
                 internal void laps()
                 {
-                    throw new NotImplementedException();
+                    Console.WriteLine("Laps done: 12");
                 }
             }
     protected class Swimming
@@ -50,9 +50,9 @@ namespace ExerciseTracking
         dues.day();
         dues.month(8);
         dues.year(2025);
-        dues.hours(7);
-        dues.minutes(6);
+        dues.hours(7);        
         dues.seconds(69);
+        dues.minutes(267);
 
         Runnings runnings = new Runnings();
         runnings.lapMiles( );
@@ -69,7 +69,32 @@ namespace ExerciseTracking
         Console.WriteLine("Hello World! This is the ExerciseTracking Project.");
     }
 
-            protected static void minutes(float minutes)
+            private void minutes(float minutes)
+            {
+                Console.WriteLine("267");
+            }
+
+            private void hours(float hours)
+            {
+                Console.WriteLine("7");
+            }
+
+            private void year(int year)
+            {
+                Console.Write("2024");
+            }
+
+            private void month(int month)
+            {
+                Console.Write("8/");
+            }
+
+            private void day()
+            {
+                Console.Write("10/");
+            }
+
+            protected static void minutes1(float minutes)
             {
                 int minutes1 = 267;
                 Console.WriteLine("mins: "+ 267 );
@@ -99,5 +124,6 @@ namespace ExerciseTracking
             {
                 Console.WriteLine("Day:"+10 );
             }
+            
         }
 }}
